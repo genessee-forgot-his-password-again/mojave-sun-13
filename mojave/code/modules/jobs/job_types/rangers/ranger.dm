@@ -23,6 +23,7 @@
 	l_pocket =   /obj/item/flashlight/ms13
 	id = 		 /obj/item/card/id/ms13/ranger
 	back =		 /obj/item/storage/ms13/military
+	shoes = /obj/item/clothing/shoes/ms13/explorer
 	backpack_contents = list(
 		/obj/item/ammo_box/ms13/m44box=1,\
 		/obj/item/stack/medical/gauze/ms13/three=1,\

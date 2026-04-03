@@ -22,6 +22,7 @@
 	back =       /obj/item/storage/ms13/satchel
 	uniform = 	 /obj/item/clothing/under/ms13/wasteland/doctor
 	suit =		 /obj/item/clothing/suit/armor/ms13/vest/civilian
+	shoes = /obj/item/clothing/shoes/ms13/explorer
 	suit_store = /obj/item/gun/ballistic/revolver/ms13/rev357/police
 	backpack_contents = list(
 		/obj/item/stack/medical/ointment/ms13/half=1,\

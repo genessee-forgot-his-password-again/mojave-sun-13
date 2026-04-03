@@ -20,6 +20,7 @@
 	r_pocket = 	 /obj/item/knife/ms13/combat
 	l_pocket =   /obj/item/flashlight/ms13
 	suit_store = /obj/item/gun/ballistic/rifle/ms13/hunting/scoped
+	shoes = /obj/item/clothing/shoes/ms13/explorer
 	backpack_contents = list(
 		/obj/item/ammo_box/ms13/c4570box=1,\
 		/obj/item/ammo_box/magazine/ms13/r308=2,\
