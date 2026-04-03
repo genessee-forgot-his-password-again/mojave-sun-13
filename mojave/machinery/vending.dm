@@ -44,10 +44,10 @@
 		var/obj/item/vend_loot
 		var/whathappens = (rand(1,100))
 		switch(whathappens)
-			if(1 to 24) //nothing
-				to_chat(user, span_danger("You feel a slight discomfort and feel nothing in reach.</span>"))
+			if(1 to 50) //nothing
+				to_chat(user, span_danger("You feel something inside, but you can't quite get it out. Further attempts may prove more successful.</span>"))
 				return
-			if(25 to 79) //winner winner
+			if(51 to 100) //winner winner
 				var/chance = pick_weight(list("medium" = medium_chance, "high" = high_chance, "rare" = rare_chance))
 				switch(chance)
 					if("medium")
@@ -61,7 +61,7 @@
 				user.put_in_active_hand(vend_loot)
 				loot_inside -= 1
 				return
-			if(80 to 100) //arm break
+			if(101) //arm break // disabled because it makes rummaging vendors not even remotely worth it
 				var/mob/living/carbon/vender_victim = user
 				var/obj/item/bodypart/affecting = vender_victim.get_bodypart("[(user.active_hand_index % 2 == 0) ? "r" : "l" ]_arm")
 				to_chat(user, span_danger("You feel a horrible pain as your arm gets stuck in the [src]s [pick("mechanisms", "parts", "gears")]!"))
